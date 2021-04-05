@@ -30,7 +30,7 @@ function App() {
     getTasks()
   },[])
 //fetch tasks
-const fetchTasks =async()=>{
+const fetchTasks = async()=>{
   const res = await fetch('http://localhost:5000/tasks')
   const data = await res.json()
     return data}
@@ -95,12 +95,12 @@ const addTask =async (task)=>{
   const data = await res.json()
   setTasks([...tasks,data])
   success()
+}
 
   // const id = Math.floor(Math.random()*10000)+1
   // const newTask ={id,...task}
   // setTasks([...tasks,newTask])
    
-}
 
 //open modal
 const openModal =()=>{
