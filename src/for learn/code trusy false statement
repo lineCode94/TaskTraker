@@ -1,0 +1,8 @@
+  const statusOne = 'happy';
+  const statusTwo = "sad";
+  const x = 0;
+  return (
+    <div className="App">
+      <h1>hello form react</h1>
+      <h1>Hello  {x?statusOne:statusTwo}</h1>
+    </div>

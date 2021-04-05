@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  background-image: url(application.png) ;
+   /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+ 
+}
+
+.container {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  /* border: 2px solid transparent;
+  border-image:linear-gradient(-45deg,#ff0,#f0f,#f00,#00f,#0f0) ;
+  border-image-slice:1 ; */
+  padding: 30px;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
+}
+.container-form  {
+  max-width: 500px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  padding: 30px;
+   
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.heading{
+  color:#fff
+}
+.heading svg{
+  margin-bottom: -5px;
+  color:#fff
+}
+.btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn.delete{
+
+  background:#EA4335;
+  color: #fff;
+
+}
+.btn.delete svg{
+  margin-bottom: -2px;
+}
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.task {
+  background: #f4f4f4;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
+  border-radius: 5px;
+
+}
+.task:hover{
+  transform: scale(1);
+}
+.task.reminder {
+  border-left: 5px solid #EA4335;
+
+}
+
+.task h3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-form {
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  display: block;
+  color:#333
+ 
+
+}
+
+.form-control input {
+  width: 100%;
+  height: 40px;
+  margin: 5px;
+  padding: 3px 7px;
+  font-size: 17px;
+  outline: none;
+  
+}
+
+.form-control-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.form-control-check label {
+  flex: 1;
+}
+
+.form-control-check input {
+  flex: 2;
+  height: 20px;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+}
+input[type="date" i]{
+  color: gray;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+}
+ 

@@ -1,0 +1,18 @@
+spa => its rap all the application in single html page in root ,
+and the app which use this tech is very fast than others because we dont need to reload the page
+why we use react ?
+-structre and handle the view or ui (html and js) in components
+-reuseable components in other projects 
+-jsx is a dinamic markup because u inject in html markup js 
+-interacitve uis with virtual dom which mean that the realdom will not reload  but the part which user intreact with it 
+what is react hooks?
+react hooks are function that let us hook into the react state and lifecycle features from 
+function components
+what is react dom lib ? 
+its rendering our react app otu to the dom 
+what is div id root ?
+it is the gateway to our ui of our react app
+app.js is the root component which is the parent of all the component in our react ui
+
+fro => htmlFor
+class => className

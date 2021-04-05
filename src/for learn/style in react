@@ -1,0 +1,4 @@
+u can style by use css file or framework 
+if u want to  add inline style u must put {{}}
+and also u can write style inside var and assign it to the elemnt 
+but use single {} not to {{}}

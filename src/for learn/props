@@ -1,0 +1,14 @@
+u can send data form component to other by props 
+u define attribute in the react component tag and pass props as param to the target component
+u can pass default value to ur component vars to avoid if there mistake when its get the value by props
+
+we use the attribute name in the other component not the value !!
+const x = 1
+<header res = {x} />
+we use in this case res not x 
+
+function name . default props  to set the default if any mistake accured
+
+u can also clean the code by pass the object of attributes that send by props
+to the child function
+

@@ -1,0 +1,2 @@
+tasks . map() to loop on the [] , and map take afunction
+output of map is list and each child should have unique key 
