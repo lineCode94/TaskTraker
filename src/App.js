@@ -32,12 +32,12 @@ function App() {
   },[])
 //fetch tasks
 const fetchTasks = async()=>{
-  const res = await fetch('  https://task-tracker-zeko-app/tasks')
+  const res = await fetch('   https://task-tracker-zeko-app.herokuapp.com/tasks')
   const data = await res.json()
     return data}
 //fetch one task
 const fetchTask = async(id)=>{
-  const res = await fetch(`  https://task-tracker-zeko-app/tasks/${id}`)
+  const res = await fetch(`   https://task-tracker-zeko-app.herokuapp.com/tasks/${id}`)
   const data = await res.json()
   console.log(data)
   return data
@@ -48,7 +48,7 @@ const fetchTask = async(id)=>{
   //delete task
 const deleteTask = async (id)=>
 {
-  await fetch(`  https://task-tracker-zeko-app/tasks/${id}`,{
+  await fetch(`   https://task-tracker-zeko-app.herokuapp.com/tasks/${id}`,{
     method:'DELETE'
   })
   setTasks(tasks.filter((item)=> item.id !== id))
@@ -57,7 +57,7 @@ const deleteTask = async (id)=>
 // const taskNew= {...tasks}
 const deleteAll = async ( )=>
 {
-  await fetch(`https://task-tracker-zeko-app/tasks/`,{
+  await fetch(` https://task-tracker-zeko-app.herokuapp.com/tasks/`,{
     method:'DELETE'
   })
  setTasks("")
@@ -68,7 +68,7 @@ const toggleReminder = async (id) =>{
   const taskToToggel = await fetchTask(id)
   const upDateTask = {...taskToToggel,reminder:!taskToToggel.reminder}
 
-  const res = await fetch(`  https://task-tracker-zeko-app/tasks/${id}`,{
+  const res = await fetch(`   https://task-tracker-zeko-app.herokuapp.com/tasks/${id}`,{
     method:'PUT',
     headers:{
       'Content-type':'application/json'
@@ -86,7 +86,7 @@ const toggleReminder = async (id) =>{
 }
 //add task
 const addTask =async (task)=>{
-  const res = await fetch(' https://task-tracker-zeko-app/tasks',{
+  const res = await fetch('  https://task-tracker-zeko-app.herokuapp.com/tasks',{
     method:"POST",
     headers:{
       'Content-type':'application/json'
