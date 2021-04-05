@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 // import AddTask from './component/AddTask';
 import Modal from './component/Modal'
 const header = "Task Tracker";
+  // "server": "json-server --watch db.json --port 5000"
 
 
 const success = () => toast.success("task added successfully");
