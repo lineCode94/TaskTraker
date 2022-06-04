@@ -4,8 +4,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
-
+ 
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
@@ -44,7 +45,7 @@ body {
   color:#fff
 }
 .heading svg{
-  margin-bottom: -5px;
+  margin-bottom: 2px;
   color:#fff
 }
 .btn {

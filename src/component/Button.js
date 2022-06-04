@@ -3,8 +3,8 @@ import { PropTypes } from 'prop-types';
 import {IoIosAddCircleOutline} from 'react-icons/io';
 
 const Button = ({color,text,onclick}) => {
-    return (
-        <button onClick={onclick} className="btn" style={{background:color}}>{text} <IoIosAddCircleOutline style={{fontSize : "20px", marginBottom:"-4px"}}/></button>
+    return ( 
+        <button onClick={onclick} className="btn inline font-bold" style={{background:color}}>{text} <IoIosAddCircleOutline style={{fontSize : "20px", marginBottom:"-4px ,inline"}}/></button>
 
     )
 }

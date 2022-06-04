@@ -29,9 +29,7 @@ color: #000;
 position: relative;
 z-index: 10;
 border-radius: 10px;
-border: 4px solid transparent;
-// border-image:linear-gradient(-45deg,#ff0,#f0f,#f00,#00f,#0f0) ;
-// border-image-slice:1 ;
+ 
  
  `
 const CloseModal = styled.button` 
@@ -90,32 +88,33 @@ const Modal = ({showModal,setshowModal,onAdd}) => {
           {showModal ? (
               <Backgruond>
                   
-                  <ModalWrapper showModal={showModal}>
+                  <ModalWrapper style={{marginBottom:'50px',height:'430px', paddingBottom:'5px' }}  className='mt-8       w-20 sm:w-50' showModal={showModal}>
                   <CloseModal
                   onClick={()=>setshowModal(showModal =>!showModal)}
                   ><TiTimesOutline/></CloseModal>
-                  <Heading>
-                     <FiEdit style={{margin:"-3px"}}/> Add Task
+                  <Heading className='text-3xl'>
+                     <FiEdit className='inline text-3xl' style={{margin:"-3px"}}/> Add Task
                   </Heading>
         <div className="container-form">
 
             <form className='add-form' onSubmit={onSubmit}>
 
                 <div className="form-control">
-                    <label > <BiTask style={{margin:"-3px"}}/> Task</label>
-                    <input type="text" placeholder='Add Task' value={text} onChange={(e) => setText(e.target.value)}/>
+                    <label > <BiTask  className='inline text-xl' style={{margin:"-3px"}}/> Task</label>
+                    <input type="text" className='border border-gray-300   focus:ring-indigo-500' placeholder='Add Task' value={text} onChange={(e) => setText(e.target.value)}/>
                 </div>
 
                 <div className="form-control">
-                    <label > <MdToday style={{margin:"-3px"}} /> Day & Time</label>
-                    <input type="date" placeholder='Add Day & Time'
+                    <label  > <MdToday  className='inline text-xl ' style={{margin:"-3px"}} /> Day & Time</label>
+                    <input type="date"className='border border-gray-300  ' 
                     value={day} onChange={(e) => setDay(e.target.value)}
                     />
                 </div>
 
                 <div className="form-control form-control-check">
-                    <label ><MdNotificationsActive/> Set Reminder</label>
+                    <label  ><MdNotificationsActive  className='inline text-xl'/> Set Reminder</label>
                     <input
+                    className='border-gray-300'
                     type="checkbox" 
                     value={reminder}
                     checked={reminder}
@@ -123,10 +122,10 @@ const Modal = ({showModal,setshowModal,onAdd}) => {
                 </div>
 
 
-                    <button style={{background:"#2DA94F"}} 
-                    className='btn btn-block'
+                    <button style={{background:"#2DA94F"    }} 
+                    className='btn btn-block  '
                      type="submit" >
-                         <VscSaveAs style={{color:"#fff",margin:"0px 10px -3px",fontSize:"20px" }}/>
+                         <VscSaveAs className='inline' style={{color:"#fff",margin:"0px 10px -3px",fontSize:"20px" }}/>
                          Save Task</button>
 
 

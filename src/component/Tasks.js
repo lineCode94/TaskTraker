@@ -17,7 +17,7 @@
         )}
             <button className="btn delete" onClick={
                      ()=>{deleteAll()}
-                 } ><AiOutlineWarning style={{color:"#FDBD00"}}/> Delete All</button>
+                 } ><AiOutlineWarning className='inline ' style={{color:"#FDBD00",marginBottom:'2px'}}/> Delete All</button>
      
 
        

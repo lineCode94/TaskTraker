@@ -30,12 +30,12 @@ const Header = ({title , onclick ,openModal}) => {
  
     return (
        <header className='header'>
-           <h1 className="heading" ><FaTasks/>  {title}</h1>
+           <h1 className="heading text-3xl inline mt-2" ><FaTasks className="inline mb-10"/>  {title}</h1>
            {/* <Button onclick={onclick}  text ='Add' /> */}
-           <ButtonModal onClick={openModal}>
+           <ButtonModal  onClick={openModal}>
          
                Add Task 
-               <IoIosAddCircleOutline style={{fontSize : "20px", marginBottom:"-4px"}}/>
+               <IoIosAddCircleOutline className="inline " style={{fontSize : "20px", marginBottom:"4px"}}/>
                </ButtonModal>
         
         

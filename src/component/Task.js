@@ -13,17 +13,17 @@ const Task = ({task, onDelete , toggleReminder}) => {
     return (    
         <div className={`task ${task.reminder?'reminder' :''}`} 
         onDoubleClick={()=> toggleReminder(task.id)}>
-                 <h3 >
+                 <h3 className="text-xl   font-bold " >
                      {task.text} 
                  <FaTrash
                   onClick={()=>  onDelete(task.id)    }
                     {...styleDelete}
                     
                     /></h3>
-                 <p><FaCalendarDay {...styleCalender} /> {task.day} </p>            
+                 <p><FaCalendarDay className='inline' {...styleCalender} /> {task.day} </p>            
                  {
                  task.reminder?<p>
-                     <MdNotificationsActive style={{marginBottom:'-3px',color:"#3A81F1"}}  />
+                     <MdNotificationsActive className='inline' style={{marginBottom:'-3px',color:"#3A81F1"}}  />
                       reminder
                        </p>
                     :''

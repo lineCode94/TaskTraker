@@ -2,28 +2,15 @@
   "tasks": [
     {
       "text": "new task",
-      "day": "2021-04-01",
-      "reminder": false,
-      "id": 2
+      "day": "2022-02-19",
+      "reminder": true,
+      "id": 7
     },
     {
-      "text": "new for u ",
-      "day": "2021-04-02",
+      "text": "new task",
+      "day": "2022-05-21",
       "reminder": true,
-      "id": 3
-    },
-    {
-      "text": "add new task for u ",
-      "day": "2021-04-05",
-      "reminder": true,
-      "id": 4
-    },
-    {
-      "text": "zoom meeting ",
-      "day": "2021-04-09",
-      "reminder": true,
-      "id": 5
-      
+      "id": 8
     }
   ]
 }
